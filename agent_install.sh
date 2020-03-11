@@ -36,6 +36,8 @@ echo "Lua5.3 set as the Lua version..."
 echo ""
 sed -i 's@"/proc/cpuinfo"@"/home/moxa/cpuinfo"@g' ./src/demoagent.cc
 echo "Path to Device ID has been changed to the '~/home/moxa/cpuinfo'.."
+sed -i 's@"/proc/cpuinfo"@"/home/moxa/cpuinfo"@g' ./src/integrate.cc
+echo "Path to Device ID has been changed to the '~/home/moxa/cpuinfo'.."
 echo ""
 sed -i 's@lua.plugins=*@lua.plugins=modbus,monitoring,@' ./cumulocity-agent.conf
 echo "Added Modbus on the Lua plugins list..."
