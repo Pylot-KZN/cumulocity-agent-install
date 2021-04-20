@@ -23,6 +23,7 @@ echo "Libraries successfully installed! Now installing the agent..."
 
 git clone https://bitbucket.org/m2m/cumulocity-agents-linux
 printf 'export C8Y_LIB_PATH=/home/moxa/cumulocity-sdk-c' | tee -a ~/.bashrc
+source ~/.bashrc
 echo "Path to the libraries has been set..."
 cd cumulocity-agents-linux
 echo "Library files have been copied for the agent.."
